@@ -1,0 +1,375 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background: none;
+    padding: 1vh 1vw;
+}
+
+#navToggle {
+    border: 0px solid transparent;
+    outline: none;
+}
+
+#nameIcon img {
+    height: 40px;
+}
+
+.black-color {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#navLinks {
+    color: white;
+    margin: 0 0.6vw;
+}
+
+.intro {
+    background-image: url("https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.intro img {
+    image-rendering: auto;
+
+}
+
+.introSection { 
+    width: 300px;
+	height: 150px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.introSection h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.introSection h3 {
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+}
+
+.introSocial a{
+    padding: 0.5em;
+}
+
+.about {
+    text-align: center;
+    padding: 15vh 2em 10vh 2em;
+}
+
+.aboutSection {
+    overflow: hidden;
+}
+
+.aboutSection h1 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 900;
+    margin-bottom: 3vh;
+}
+
+.aboutSection h5 {
+    font-size: 1rem;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    margin-bottom: 5vh;
+}
+
+.flex-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+
+.flex-container > div {
+    flex: 1 0 19%;
+    margin: 8% 3%;
+}
+
+#hr {
+    border: 0.5px black solid;
+    width: 90%;
+    margin-bottom: 5vh;
+}
+
+
+.projects {
+    padding: 5vh 0 0 0;
+    text-align: center;
+    color: black;
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.firstWork img, .secondWork img {
+    margin: 0vh 0vw 5vh 0vw;
+    width: 80%;
+    height: 275px;
+}
+
+.workInfo {
+    background: #E8E8E0;
+    padding: 5vh 0;
+}
+
+.workInfo h1 {
+    font-weight: 900;
+}
+
+.firstWork p, .secondWork p {
+    margin: 0 8vw;
+    font-weight: 900;
+}
+
+.workBadges {
+    margin: 2vh 12vw 3vh 12vw;
+}
+
+.workBadges > div {
+    flex: 1 0 10%;
+    margin: 1% 2%;
+}
+
+.workBadges > div > span {
+    padding: 8px;
+}
+
+.badge {
+    padding: 5px;
+}
+
+.secondWork img {
+    margin-top: 6vh;
+}
+
+.workInfo a, .contact a {
+        border: solid 1px #3c3c3c;
+    color: #3c3c3c;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1;
+    margin: 0 2vw 4vh 2vw;
+    overflow: hidden;
+    padding: 12px 0 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s ease 0s;
+    width: 130px;
+    z-index: 2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.workInfo a::after, .contact a::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #333;
+  transform-origin:left;
+  transition:width 0.25s ease;
+  z-index:-1;
+}
+
+.workInfo a:hover::after, .contact a:hover::after {
+  width: 100%;
+}
+
+.workInfo a:hover, .contact a:hover::after {
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+    padding: 25vh 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 4vh;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .intro img {
+        height: 35px;
+    }
+    
+    #nameIcon img {
+        height: 50px;
+    }
+    
+    .about {
+        padding: 15vh 2em 15vh 2em
+    }
+    
+    .flex-container > div {
+        flex: 1 0 9%;
+        margin: 2% 6%
+    }
+    
+    .workBadges > div {
+        flex: 1 0 0%;
+        margin: 2% .4%;
+    }
+    
+    
+    .workInfo a, .contact a {
+        font-size: 1.1rem;
+    } 
+    
+    .firstWork img, .secondWork img {
+        width: 85%;
+        height: 50vh;
+    }
+    
+    .firstWork img {
+        margin: 0vh 0vw 7vh 0vw;
+    }
+    
+    .secondWork img {
+        margin: 7vh 0vw 7vh 0vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .aboutSection h5 {
+        font-size: 1.5rem;
+    }
+    
+    .firstWork img, .secondWork img {
+        width: 85%;
+        height: 50vh;
+    }
+    
+    .firstWork p, .secondWork p {
+        font-size: 1.2rem;
+    }
+} 
+
+/* Large devices (laptops/desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+    
+    
+    .aboutSection {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .aboutSection h5 {
+        font-size: 1.3rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .skillIcons {
+        width: 85%;
+        margin: auto;
+    }
+    
+    .flex-container > div {
+        flex: 1 0 19%;
+        margin: 2% 1%;
+    }
+    
+    .projects {
+        padding: 0;
+    }
+   
+    .firstWork, .secondWork {
+        display: flex
+    }
+    
+    .firstWork img, .secondWork img {
+        width: 50%;
+        margin: 4vh 0vw 4vh 0vw;
+        padding: 20px;
+    }
+    
+    .firstWork p, .secondWork p {
+        font-size: 1rem;
+        margin: 0 4vw;
+    }
+    
+    .workInfo {
+        padding: 0 0 0 0;
+        flex: 1;
+    } 
+    
+    .workInfo > div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .workInfo h1 {
+        font-size: 2rem;
+    }
+    
+    .workBadges {
+    margin: 2vh 11vw 3vh 11vw;
+    }
+    
+    .secondWork {
+        flex-direction: row-reverse;
+    }
+    
+    .workInfo a {
+        margin: 0 2vw 0vh 2vw;
+    }
+    
+    svg {
+        height: 80px;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .firstWork img, .secondWork img {
+        height: 60vh;
+    }
+    
+    .firstWork p, .secondWork p {
+        font-size: 1.3rem;
+    }
+    
+    .workInfo h1 {
+        font-size: 2.3rem;
+    }
+    
+    .workBadges > div > span {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .firstWork img, .secondWork img {
+        height: 65vh;
+    }
+}
