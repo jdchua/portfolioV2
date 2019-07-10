@@ -123,6 +123,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.firstWork:nth-child(3) {
+    margin-top: 6vh;
+}
+
 .firstWork img, .secondWork img {
     margin: 0vh 0vw 5vh 0vw;
     width: 80%;
