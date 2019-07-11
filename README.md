@@ -1,26 +1,39 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+ # SpotGen
+<img src="http://u.cubeupload.com/jnike/spotGen.png">
 
+Web application that utilizes spotify's API in order to quickly and easily create a playlist with an artist's top tracks. User is able to add as many artists as they please to the playlist.
 
-Hi there! Welcome to Cloud9 IDE!
+## Demo
+Working live demo: https://spotgen.herokuapp.com/
 
-To get you started, we included a small hello world application.
+## Getting Started
 
-1) Open the hello-world.html file
+### Clone or download this repository
+```sh
+git clone https://github.com/jdchua/portfolioV2.git
+```
 
-2) Click on the Preview button to open a live preview pane
+### Install dependencies
+```sh
+npm install
+```
 
-3) Make some changes to the file, save, watch the preview, and have fun!
+## Features
 
-Happy coding!
-The Cloud9 IDE team
+* Client credentials flow (Application-only authentication)
 
+* Authorization code grant (Signed by user)
 
-## Support & Documentation
+* Search for a specific artist's top tracks
 
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+* Add songs to newly created playlist on Spotify
+
+* Responsive web design
+
+## Built With
+* [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+* [Bootstrap](https://getbootstrap.com/docs/3.3/)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Node.JS](https://nodejs.org/en/)
+* [express](https://expressjs.com/)
