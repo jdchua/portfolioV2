@@ -46,7 +46,7 @@ body {
 
 .intro img {
     image-rendering: auto;
-
+    height: 35px;
 }
 
 .introSection { 
