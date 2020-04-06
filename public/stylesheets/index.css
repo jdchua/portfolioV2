@@ -123,12 +123,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.firstWork:nth-child(3) {
-    margin-top: 6vh;
-}
 
 .firstWork img, .secondWork img {
-    margin: 0vh 0vw 5vh 0vw;
+    margin: 5vh 0vw 5vh 0vw;
     width: 80%;
     height: 275px;
 }
@@ -220,6 +217,7 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    
     .intro img {
         height: 35px;
     }
